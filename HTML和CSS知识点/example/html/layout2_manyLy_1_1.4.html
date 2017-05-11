@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一列定宽一列自适应：方法四</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*此方法等同于table布局，但不是实际的表格，利用表格的属性*/
+        
+       .parent{
+           display: table;
+           /*fixed： 固定布局的算法，高效*/
+           table-layout: fixed;
+       }
+        .left {
+            display: table-cell;
+            width: 100px;
+            background: forestgreen;
+        }
+        .right {
+            display: table-cell;
+            background: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <p>你是那么美</p>
+        </div>
+            <div class="right">
+                <p>你是那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么美</p>
+                <p>但都是想象的美</p>
+            </div>
+    </div>
+</body>
+
+</html>

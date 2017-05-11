@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中：方法一</title>
+    <style>
+        /*父元素子元素宽高都未知*/
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*此处高的设定是为了便于观察*/
+        height: 100px;
+        background: darkcyan;
+    }
+    .child{
+        padding: 10px;
+        background: lavender;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+</body>
+</html>

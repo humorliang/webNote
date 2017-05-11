@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>overflow:hidden</title>
+    <style>
+    .warp{
+        overflow: hidden;
+        /*触发bfc来清除浮动*/
+    }
+    .left{
+        float: left;
+        width: 100px;
+        height: 100px;
+        background: hotpink;
+    }
+    .right{
+        float: right;
+        width: 110px;
+        height: 110px;
+        background: bisque;
+    }
+    .next{
+        width: 100%;
+        height: 20px;
+        background: yellowgreen;
+    }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="next">next</div>
+</body>
+</html>

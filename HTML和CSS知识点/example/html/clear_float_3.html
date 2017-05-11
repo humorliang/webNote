@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素法</title>
+    <style>
+    .left{
+        float: left;
+        width: 100px;
+        height: 100px;
+        background: hotpink;
+    }
+    .right{
+        float: right;
+        width: 110px;
+        height: 110px;
+        background: bisque;
+    }
+    .next{
+        width: 100%;
+        height: 20px;
+        background: yellowgreen;
+    }
+    /*利用伪元素进行清除浮动形如空的div标签*/
+     .clearfix:after{
+        content:"反正你也看不见";
+        display:block;
+        clear:both;
+        height:0;
+        overflow:hidden;
+        visibility:hidden;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="warp clearfix">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="next">next</div>
+</body>
+</html>

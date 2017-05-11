@@ -1,0 +1,64 @@
+@charset "utf-8";
+table{
+    margin: 0 auto 100px auto;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    font-weight: 500;
+    box-sizing: content-box;
+}
+ul{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    /*display: table-cell;*/
+    margin:20px 20px;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.warp div{
+    width: 63px;
+    height: 62px;
+    text-align: center;
+    line-height: 63px;
+    -webkit-box-shadow: 1px 3px 2px 1px #ffb280;
+    -moz-box-shadow: 1px 3px 2px 1px #ffb280;
+    box-shadow: 1px 3px 2px 1px #ffb280;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+.color-1{
+    background: #0acc9f;
+}
+.color-2{
+    background: #ccc92b;
+}
+.color-3{
+    background: #0ecc1d;
+}
+.color-4{
+    background: #cc875f;
+}
+.color-5{
+    background: #1fa1cc;
+}
+.color-6{
+    background: #ffb9c7;
+}
+.color-7{
+    background: #ccc6a3;
+}
+.color-8{
+    background: #a07ecc;
+}
+.color-9{
+    background: #a7e87f;
+}

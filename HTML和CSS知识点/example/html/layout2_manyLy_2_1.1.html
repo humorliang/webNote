@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多列定宽一列自适应</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            float: left;
+            margin-right: 10px;
+            width: 100px;
+            background: forestgreen;
+        }
+        .right {
+            /*3*100+10+10+10=330*/
+            margin-left: 330px;
+            background: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <p>左边</p>
+        </div>
+        <div class="left">
+            <p>我是左边</p>
+        </div>
+        <div class="left">
+            <p>左边啊</p>
+        </div>
+        <div class="right">
+            <p>你是那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么美</p>
+            <p>但都是想象的美</p>
+        </div>
+    </div>
+</body>
+
+</html>

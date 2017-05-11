@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>不定宽一列自适应:方法一</title>
+    <style>
+        /*不定宽的意思是宽度可以随意改变，或者由内容决定*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        .left {
+            float: left;
+            padding: 10px;
+            background: forestgreen;
+        }
+        .right {
+            overflow: hidden;
+            background: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <p>你是那么美</p>
+        </div>
+            <div class="right">
+                <p>你是那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么那么美</p>
+                <p>但都是想象的美</p>
+            </div>
+    </div>
+</body>
+
+</html>
