@@ -13,6 +13,9 @@
 <!--总是记不住row表示行，col表示列。表格中tr表示行（table row）
 th和td(table data cell)表示列-->
 ```
+## z-index的理解
+父级的z-index影响子级，有一个栈的概念
+![z-index层关系](example/img/z-index.png)
 ## 语义化的好处
 
     1.SEO搜索引擎优化
@@ -177,8 +180,9 @@ input[type="text"]{}
 
 
 ## CSS变形transform
+![css变换](example/img/css变换.png)
 ```css
-    向下为Y轴正方向，向右为X轴正方向
+    ## 向下为Y轴正方向，向右为X轴正方向
 
     transform：translate(20%，20%);移动这里的20%参照物是本元素的宽和高
 
@@ -191,7 +195,7 @@ input[type="text"]{}
     和transform：rotate(45deg) translate(100px) ;先旋转，再移动
     旋转后X轴与Y轴方向发生了变化
 
-    2D Transform Functions：
+            2D Transform Functions：
     matrix()： 以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵 
     translate()： 指定对象的2D translation（2D平移）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
     translatex()： 指定对象X轴（水平方向）的平移 
@@ -203,7 +207,7 @@ input[type="text"]{}
     skew()： 指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
     skewx()： 指定对象X轴的（水平方向）扭曲 
     skewy()： 指定对象Y轴的（垂直方向）扭曲 
-    3D Transform Functions：
+            3D Transform Functions：
     matrix3d()： 以一个4x4矩阵的形式指定一个3D变换 
     translate3d()： 指定对象的3D位移。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
     translatez()： 指定对象Z轴的平移 
@@ -213,7 +217,7 @@ input[type="text"]{}
     rotatez()： 指定对象在z轴上的旋转角度 
     scale3d()： 指定对象的3D缩放。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
     scalez()： 指定对象的z轴缩放 
-    perspective()： 指定透视距离 
+    * perspective()： 指定透视距离 
 ```
 
 ## CSS动画效果：过渡效果transition ie10+

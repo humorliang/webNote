@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一列定宽一列自适应高度同时变化：方法二</title>
+    <style>
+        .parent {
+            display: flex;
+        }
+
+        .left {
+            width: 100px;
+            background: khaki;
+        }
+
+        .right {
+            flex: 1;
+            background: lavender;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <p>child1</p>
+        </div>
+        <div class="right">
+            <p>这是一段很长很长的文字这是一段很长很长的文字 这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字 这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字 这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字
+                这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字 这是一段很长很长的文字这是一段很长很长的文字这是一段很长很长的文字
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

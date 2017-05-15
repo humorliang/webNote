@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>等分布局：方法二</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*利用负边距进行对第一个元素的左边距抵消*/
+
+        .warp {
+            margin-left: -10px;
+        }
+
+        .parent {
+            display: table;
+            width: 100%;
+        }
+
+        .child {
+            display: table-cell;
+            /*表格的单元格没有外边距，用内边距*/
+            padding-left: 10px;
+        }
+
+        p {
+            background: darkcyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="warp">
+        <div class="parent">
+            <div class="child">
+                <p>child1</p>
+            </div>
+            <div class="child">
+                <p>child2</p>
+            </div>
+            <div class="child">
+                <p>child3</p>
+            </div>
+            <div class="child">
+                <p>child4</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

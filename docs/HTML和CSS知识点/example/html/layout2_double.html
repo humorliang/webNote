@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圣杯双飞翼布局</title>
+    <style>
+        /*思路解析：
+        1.三列都左浮动。自适应的宽度为100%；
+        2.最外层容器设置为overflow触发BFC
+        3.左侧盒子设置右负边距，让middle盒子上来,右侧的盒子设置左负边距为自身的宽度，
+        则右侧的盒子就可以上来了。
+        4.在包裹层盒子设置左右等有两边盒子宽度的内边距，然后再对两个盒子进行相对定位
+        分别向两边移动宽度的距离（为了使自适应的内容不被覆盖，处于安全空间）
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            background: lightblue;
+        }
+
+        .container {
+            background: beige;
+            overflow: hidden;
+            padding: 0 100px;
+        }
+
+        .middle {
+            float: left;
+            width: 100%;
+        }
+
+        .left {
+            position: relative;
+            left: -100px;
+            float: left;
+            margin-right: -100%;
+            width: 100px;
+            height: 100px;
+            background: khaki;
+        }
+
+        .right {
+            position: relative;
+            right: -100px;
+            float: left;
+            margin-left: -100px;
+            width: 100px;
+            height: 100px;
+            background: navajowhite;
+        }
+
+        footer {
+            width: 100%;
+            background: mediumaquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>Header内容区</h4>
+    </header>
+    <div class="container">
+       
+        <div class="left">
+            <h4>左边栏</h4>
+        </div>
+         <div class="middle">
+            <h4>中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性 中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区
+                中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区 中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区
+                中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区中间弹性区
+            </h4>
+        </div>
+        <div class="right">
+            <h4>右边栏</h4>
+        </div>
+    </div>
+    <footer>
+        <h4>Footer内容区</h4>
+    </footer>
+</body>
+
+</html>
