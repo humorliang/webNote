@@ -13,7 +13,7 @@ node.parentNode
     .previousSibling
     .nextSibling
 ```
-[示例]()
+
 ## 2.元素节点列行遍历：
 ```javascript
 p.firstElementChild
@@ -21,7 +21,7 @@ p.firstElementChild
  .previousElementSibling
  .nextElementSibling
 ```
-[示例]()
+
 ## 节点获取
 
 ```javascript
@@ -39,7 +39,7 @@ document.querySelector("css选择器");//获取第一个符合的元素
 //querySelectorAll返回non-live（非实时变化）的动态节点集合
 document.querySelectorAll("css选择器");//获取所有匹配元素的集合
 ```
-[示例]()
+
 
 注：以上选择器(除了getElementById),不仅可以在文档中搜索，而且还可以
 在某个元素节点下面查找。eg: document.getElementsByClassName("classA");
@@ -362,7 +362,7 @@ focusout: 元素将要失去焦点时
      并且通过e.target拿到了被点击的Li节点.
      从而可以获取到相应的信息,并作处理.
 
-[示例]()
+
 
 
 

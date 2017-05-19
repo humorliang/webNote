@@ -463,10 +463,12 @@ c.area();
 ```
 
 构造器对象Circle的原型链：
+
 ![Circle原型链](img/704299074-58fc1a83b9adf_articlex.png)
 
 
 实例对象c的原型链：
+
 ![对象c的原型链](img/2976105399-59040a257cdeb_articlex.png)
 
 
@@ -601,6 +603,7 @@ function equal(a, b) {
 #### 注意&& 和 || 都有短路功能
 #### 运算符优先级： * / % 高于 + - 高于 && || 高于 ? :
 完整表格：
+
 ![算术优先级](img/2634067358-58fca2345f9ac_articlex.png)
 
 
@@ -959,6 +962,7 @@ tom.setName("Tom");
 tom.addCourse("physics");
 这样完全使用构造函数来构造实例对象，他们的存储是这样的：
 ```
+
 ![面向对象](img/3011704710-5904449ce5991_articlex.png)
 
 
@@ -1019,6 +1023,7 @@ JS中的属性查找、属性修改和属性删除都是通过原型链实现的
 
 ### 属性修改
 以tom对象为例:
+
 ![tom对象](img/902681160-59045198c4b5b_articlex.png)
 
 ```javascript
@@ -1124,6 +1129,7 @@ Java中有private, protected, public关键字来定义属性和方法的访问�
 })();
 ```
 ### 原型链：
+
 ![原型链](img/3403993030-59049c2a6f21e_articlex.png)
 
 
