@@ -8,6 +8,7 @@
 * [CSS布局2](HTML和CSS知识点/CSS布局2.md)
 ## javaScript知识点
 ### 第一部分
+* [Document_Object_Model](JavaScript/Document_Object_Model.md)
 * [Animation](JavaScript/Animation.md)
 * [BOM](JavaScript/BOM.md)
 * [Canvas](JavaScript/Canvas.md)
